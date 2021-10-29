@@ -1,12 +1,174 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>BUC</title>
+    <!--mdb-->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet" />
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+    <!--stylesheet-->
+    <link href="./css/index.css" rel="stylesheet" />
+
+    <!--favicon-->
+    <link rel="apple-touch-icon" sizes="180x180" href="./img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png">
+    <link rel="manifest" href="./img/site.webmanifest">
+
 </head>
-<body>
-    
+
+<body onscroll="scrollNav()">
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-xl navbar-dark p-md-0 p-2 " id="navbar">
+        <!-- Container wrapper -->
+        <div class="container">
+            <!-- Navbar brand -->
+            <a class="navbar-brand me-2" href="https://mdbgo.com/">
+                <img src="./img/logo.png" height="32" alt="" loading="lazy" style="margin-top: -1px;" />
+                <small>BUC</small>
+            </a>
+
+            <!-- Toggle button -->
+            <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarButtonsExample" aria-controls="navbarButtonsExample" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+            </button>
+
+            <!-- Collapsible wrapper -->
+            <div class="collapse navbar-collapse" id="navbarButtonsExample">
+                <!-- Left links -->
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">White Paper</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Statistics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Tokenomics</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Team</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">FAQ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Blogs</a>
+                    </li>
+                </ul>
+                <!-- Left links -->
+
+                <div class="d-flex align-items-center">
+                    <a href="#0" class="btn10">
+                        <span>Buy on Pancakeswap</span>
+                        <div class="transition"></div>
+                    </a>
+                </div>
+            </div>
+            <!-- Collapsible wrapper -->
+        </div>
+        <!-- Container wrapper -->
+    </nav>
+    <!-- Navbar -->
+
+    <!--hero -->
+    <div class="hero">
+        <div class="container hero-container">
+            <div class=" p-0">
+                <h1 class="title">BASIC UNIVERSAL COIN </h1>
+                <h3 class="sub-title">Crypto of real world utility</h3>
+                <p class="para">A coin with monetary policy designed to optimise the supply of tokens to meet the demand
+                    of
+                    the economy built on it . The coin achieves this without creating any disparity among the economic
+                    actors, as the supply is increased or decreased proportionally in all accounts.
+
+                </p>
+                <a href="#0" class="btn10">
+                    <span>Launch Dashboard</span>
+                    <div class="transition"></div>
+                </a>
+
+                <div class="hero-links">
+                    <a href="#" class="hero-link"><i class="far fa-file-alt"></i>Smart Contract</a>
+                    <a href="#" class="hero-link"><i class="far fa-play-circle"></i>How to Buy Tokens</a>
+                </div>
+
+            </div>
+        </div>
+        <div class="container-fluid p-4 justify-content-center data-box">
+            <div class="row  justify-content-around
+            ">
+                <div class="col-8   col-xl-2 data " data-aos="fade-up" id="nameId">
+                    <span> Name : </span><BR>BASIC UNIVERSAL COIN
+                </div>
+                <div class="col-8  col-xl-1 data" data-aos="fade-up" id="typeId">
+                    <span> Type : </span><BR> ERC-20
+                </div>
+                <div class="col-8  col-xl-1 data" data-aos="fade-up" id="symbolId">
+                    <span> Symbol : </span><BR> BUC
+                </div>
+                <div class="col-8    col-xl-1 data" data-aos="fade-up" id="supplyId">
+                    <span> Supply : </span><BR> 1,000,000,000
+                </div>
+                <div class="col-8   col-xl-1  data" data-aos="fade-up" id="decimalId">
+                    <span> Decimal: </span><BR> 9
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="about-chart">
+        <div class="about ">
+            <div class="about-title  justify-content-center">
+                <div class="title-para title-para-1 col-md-3 col-12">A Decentralized  System with Monetary Equillibrium.</div>
+                <h1 class="title col-md-5 col-12">MONEY <br>AS PRODUCT</h1>
+                <div class="title-para title-para-2 col-md-3 col-12">Wise speding is part of wise investment</div>
+            </div>
+            <div class="about-para">
+
+                which is specialized to do the accounting of economic goods and services and make trade efficient
+                between two parties. Since we treat it as a product we believe in demand and supply of this product when
+                needed by the market but without causing cantillon effect which changes the share of wealth between
+                economic actors. So our system increase supply and decreaase it without changing wealth share of the
+                individuals. This new system is trying to solve the problem of central bank’s influence over monetary
+                system and bring back monetary system to the public without the need of any central authority.
+
+            </div>
+            <div class="about-btn">
+                <a href="#0" class="btn10">
+                    <span>White paper </span>
+                    <div class="transition"></div>
+                </a>
+                <a href="#0" class="btn10" style="background-color: white !important; color : #561b8d;">
+                    <span>Audit</span>
+                    <div class="transition"></div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <script>
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        function scrollNav() {
+            if (window.pageYOffset >= 100) {
+                navbar.classList.add("sticky");
+            } else {
+                navbar.classList.remove("sticky");
+            }
+        }
+    </script>
 </body>
+
 </html>
