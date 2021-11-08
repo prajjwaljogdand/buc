@@ -220,7 +220,14 @@ body {
 }
 
 .about-chart {
-  background: radial-gradient(58.98% 58.98% at 50% 33.83%, #36136A 0%, #141137 74.57%, #0C092E 100%);
+  background: radial-gradient(58.98% 58.98% at 50% 33.83%, #36136a 0%, #141137 74.57%, #0c092e 100%);
+}
+
+.about-chart .about-box {
+  background-image: url("../img/about-bg.png");
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
 }
 
 .about-chart .about {
@@ -301,5 +308,292 @@ body {
   .about-para {
     padding-top: 20px !important;
   }
+}
+
+.chart {
+  background-image: url("../img/about-bg2.png");
+  background-position: bottom;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.chart-container .title {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 2px white;
+}
+
+.chart-container .title svg {
+  font: 800 48px "Open Sans", sans-serif;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.chart-container .title text {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  text-align: center;
+  width: 100%;
+}
+
+.chart-container .sub-title {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.chart-container .donutchart {
+  margin: auto;
+  background-image: url("../img/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 90px 90px;
+}
+
+.color-1 {
+  width: 40px !important;
+  height: 15px !important;
+  background-color: #5874cf !important;
+  padding: 0 !important;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.color-2 {
+  width: 40px !important;
+  height: 15px !important;
+  background-color: #8761a8 !important;
+  padding: 0 !important;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.color-3 {
+  width: 40px !important;
+  height: 15px !important;
+  background-color: #16bf86 !important;
+  padding: 0 !important;
+  display: inline-block;
+  border-radius: 50px;
+  margin-right: 10px;
+}
+
+.stats {
+  background-color: black;
+  background: linear-gradient(0.18deg, #141137 -1.54%, #000000 124.48%);
+  padding: 20px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.stats .sub-title {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.stats .stat {
+  border: 2px solid #890aff;
+  padding: 10px;
+  margin: 20px;
+}
+
+.stats .stat .stat-data {
+  font-size: 24px;
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+.cont {
+  max-width: 800px !important;
+  margin: auto;
+  padding: 20px;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 4rem;
+  margin: 0 0 0 30px;
+  color: white;
+  font-family: "Roboto", sans-serif !important;
+}
+
+.timeline:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  border: none;
+  border-left: 4px dashed #890aff;
+}
+
+.timeline .timeline-container {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline .timeline-container .timeline-icon {
+  position: absolute;
+  left: -88px;
+  top: 4px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 2rem;
+  background: #4f537b;
+}
+
+.timeline .timeline-container .timeline-icon img,
+.timeline .timeline-container .timeline-icon i {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 24px;
+  color: white;
+}
+
+.timeline .timeline-container .timeline-icon img {
+  width: 60%;
+  height: 60%;
+}
+
+.timeline .timeline-container .timeline-body {
+  background: rgba(0, 0, 0, 0);
+  border-radius: 3px;
+  padding: 10px 20px 15px;
+  -webkit-box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+          box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
+}
+
+.timeline .timeline-container .timeline-body:before {
+  content: "";
+  background: inherit;
+  width: 20px;
+  height: 20px;
+  display: block;
+  position: absolute;
+  left: -10px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  border-radius: 0 0 0 2px;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title {
+  margin-bottom: 1.4rem;
+}
+
+.timeline .timeline-container .timeline-body .timeline-title .badge {
+  background: #4f537b;
+  padding: 4px 8px;
+  border-radius: 3px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.timeline .timeline-container .timeline-body .timeline-subtitle {
+  font-weight: 300;
+  font-style: italic;
+  opacity: 0.4;
+  margin-top: 16px;
+  font-size: 11px;
+}
+
+.timeline .timeline-container.primary .badge,
+.timeline .timeline-container.primary .timeline-icon {
+  background: #1d8cf8 !important;
+}
+
+.timeline .timeline-container.info .badge,
+.timeline .timeline-container.info .timeline-icon {
+  background: #11cdef !important;
+}
+
+.timeline .timeline-container.success .badge,
+.timeline .timeline-container.success .timeline-icon {
+  background: #00bf9a !important;
+}
+
+.timeline .timeline-container.warning .badge,
+.timeline .timeline-container.warning .timeline-icon {
+  background: #ff8d72 !important;
+}
+
+.timeline .timeline-container.danger .badge,
+.timeline .timeline-container.danger .timeline-icon {
+  background: #fd5d93 !important;
+}
+
+.purple {
+  color: #890aff;
+  font-weight: 600;
+}
+
+.blog {
+  color: white !important;
+}
+
+.faq {
+  background-image: url("../img/faq-bg.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.faq .title {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  margin: 20px;
+  margin-bottom: 40px;
+}
+
+.faq .container {
+  max-width: 950px;
+}
+
+.faq .accordion {
+  background: rgba(86, 27, 141, 0.2);
+  border: 1px solid rgba(137, 10, 255, 0.5);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  /* Note: backdrop-filter has minimal browser support */
+  border-radius: 10px;
+}
+
+.faq .accordion-item {
+  background-color: transparent !important;
+}
+
+.faq .accordion-button {
+  background-color: transparent !important;
+  color: white;
+}
+
+.faq .accordion-button:not(.collapsed) {
+  color: #890aff;
+}
+
+footer .btn {
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+footer .btn-floating:hover {
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
 }
 /*# sourceMappingURL=index.css.map */
