@@ -545,6 +545,7 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
   background-image: url("../img/faq-bg.png");
   background-position: center;
   background-size: cover;
+  
   .title {
     font-weight: 800;
     font-family: "Open Sans", sans-serif;
@@ -553,6 +554,7 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
   }
   .container {
     max-width: 950px;
+  
   }
   .accordion {
     background: rgba(86, 27, 141, 0.2);
@@ -561,7 +563,7 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     /* Note: backdrop-filter has minimal browser support */
-
+margin: 20px;
     border-radius: 10px;
   }
 
@@ -577,7 +579,8 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
   }
 }
 
-footer {
+footer , .team {
+
   .btn {
     transition: all 0.4s;
   }
@@ -585,4 +588,85 @@ footer {
   .btn-floating:hover {
     transform: translateY(-10px);
   }
+}
+
+.team{
+  .name{
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+  }
+  img{
+    width: 50%;
+  }
+  .title {
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    color: transparent;
+    text-shadow: 0 0 2px white;
+    svg {
+      font: 800 48px "Open Sans", sans-serif;
+      width: 100%;
+      height: 50px;
+      margin: auto;
+    }
+
+    text {
+      fill: none;
+      stroke: white;
+      stroke-width: 0.5px;
+      stroke-linejoin: round;
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  .sub-title {
+    font-weight: 800;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+  }
+  .pos{
+    svg {
+      font: 800 36px "Open Sans", sans-serif;
+      width: 100%;
+      height: 40px;
+    
+    }
+
+    text {
+
+      text-shadow: 0 0 5px black;
+      stroke: #890AFF;
+      stroke-width: 2px;
+     
+      stroke-linejoin: round;
+      width: 100%;
+      
+    }
+  }
+}
+@media (max-width: 1200px) {
+  .team{
+    text-align: center !important;
+    justify-content: center !important;
+    img{
+      width: 35%;
+    }
+  }
+  
+}
+@media (max-width: 750px) {
+  .team{
+    text-align: center !important;
+    justify-content: center !important;
+    img{
+      width: 100%;
+    }
+  }
+  
+}
+
+.gradient{
+  background: radial-gradient(58.98% 58.98% at 50% 33.83%, #36136A 0%, #141137 74.57%, #0C092E 100%);
 }

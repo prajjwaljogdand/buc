@@ -571,6 +571,7 @@ body {
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
   /* Note: backdrop-filter has minimal browser support */
+  margin: 20px;
   border-radius: 10px;
 }
 
@@ -587,13 +588,94 @@ body {
   color: #890aff;
 }
 
-footer .btn {
+footer .btn, .team .btn {
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
 }
 
-footer .btn-floating:hover {
+footer .btn-floating:hover, .team .btn-floating:hover {
   -webkit-transform: translateY(-10px);
           transform: translateY(-10px);
+}
+
+.team .name {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+}
+
+.team img {
+  width: 50%;
+}
+
+.team .title {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  color: transparent;
+  text-shadow: 0 0 2px white;
+}
+
+.team .title svg {
+  font: 800 48px "Open Sans", sans-serif;
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.team .title text {
+  fill: none;
+  stroke: white;
+  stroke-width: 0.5px;
+  stroke-linejoin: round;
+  text-align: center;
+  width: 100%;
+}
+
+.team .sub-title {
+  font-weight: 800;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+}
+
+.team .pos svg {
+  font: 800 36px "Open Sans", sans-serif;
+  width: 100%;
+  height: 40px;
+}
+
+.team .pos text {
+  text-shadow: 0 0 5px black;
+  stroke: #890AFF;
+  stroke-width: 2px;
+  stroke-linejoin: round;
+  width: 100%;
+}
+
+@media (max-width: 1200px) {
+  .team {
+    text-align: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .team img {
+    width: 35%;
+  }
+}
+
+@media (max-width: 750px) {
+  .team {
+    text-align: center !important;
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
+  }
+  .team img {
+    width: 100%;
+  }
+}
+
+.gradient {
+  background: radial-gradient(58.98% 58.98% at 50% 33.83%, #36136A 0%, #141137 74.57%, #0C092E 100%);
 }
 /*# sourceMappingURL=index.css.map */
