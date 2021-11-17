@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -336,7 +340,7 @@ body {
 .chart-container .title text {
   fill: none;
   stroke: white;
-  stroke-width: 0.5px;
+  stroke-width: 1px;
   stroke-linejoin: round;
   text-align: center;
   width: 100%;
@@ -471,7 +475,7 @@ body {
 }
 
 .timeline .timeline-container .timeline-body {
-  background: rgba(0, 0, 0, 0);
+  background: rgba(0, 0, 0, 0.02);
   border-radius: 3px;
   padding: 10px 20px 15px;
   -webkit-box-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
@@ -534,6 +538,20 @@ body {
 .timeline .timeline-container.danger .badge,
 .timeline .timeline-container.danger .timeline-icon {
   background: #fd5d93 !important;
+}
+
+@media (max-width: 600px) {
+  .timeline {
+    padding-left: 4rem;
+  }
+  .timeline-icon {
+    width: 40px !important;
+    height: 40px !important;
+    left: -81px !important;
+  }
+  .timeline-body {
+    padding: 10px   0px 15px !important;
+  }
 }
 
 .purple {
@@ -626,7 +644,7 @@ footer .btn-floating:hover, .team .btn-floating:hover {
 .team .title text {
   fill: none;
   stroke: white;
-  stroke-width: 0.5px;
+  stroke-width: 1px;
   stroke-linejoin: round;
   text-align: center;
   width: 100%;
@@ -678,5 +696,25 @@ footer .btn-floating:hover, .team .btn-floating:hover {
 
 .gradient {
   background: radial-gradient(58.98% 58.98% at 50% 33.83%, #36136A 0%, #141137 74.57%, #0C092E 100%);
+}
+
+.list-group-item {
+  background-color: transparent !important;
+  color: white;
+}
+
+.filled-in {
+  background: #3adb15  !important;
+  border-color: #3adb15 !important;
+}
+
+.filled-out {
+  background: white  !important;
+  border-color: white !important;
+  border: none !important;
+}
+
+.list-group-item {
+  border: none !important;
 }
 /*# sourceMappingURL=index.css.map */

@@ -4,6 +4,9 @@
   padding: 0;
   margin: 0;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Montserrat", sans-serif;
   font-family: "Roboto", sans-serif;
@@ -158,6 +161,8 @@ body {
     }
   }
 }
+
+
 .hero {
   background-image: url("../img/bg.png") !important;
   background-position: center;
@@ -317,7 +322,7 @@ body {
     text {
       fill: none;
       stroke: white;
-      stroke-width: 0.5px;
+      stroke-width: 1px;
       stroke-linejoin: round;
       text-align: center;
       width: 100%;
@@ -457,7 +462,8 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
     }
 
     .timeline-body {
-      background: rgba(0, 0, 0, 0);
+      background: rgba(0, 0, 0, 0.02);
+ 
       border-radius: $timeline-body-round;
       padding: 10px 20px 15px;
       box-shadow: $timeline-body-shadow;
@@ -535,6 +541,24 @@ $timeline-body-shadow: 1px 3px 9px rgba(0, 0, 0, 0.1);
     }
   }
 }
+
+
+
+@media (max-width: 600px) {
+  .timeline{
+    padding-left: 4rem;
+  }
+   .timeline-icon {
+    width : 40px !important;
+    height: 40px !important;
+left: -81px !important;
+  }
+  .timeline-body {
+    padding: 10px   0px 15px !important;
+  }
+  }
+  
+
 .purple {
   color: #890aff;
   font-weight: 600;
@@ -615,7 +639,7 @@ footer , .team {
     text {
       fill: none;
       stroke: white;
-      stroke-width: 0.5px;
+      stroke-width: 1px;
       stroke-linejoin: round;
       text-align: center;
       width: 100%;
@@ -670,4 +694,24 @@ footer , .team {
 
 .gradient{
   background: radial-gradient(58.98% 58.98% at 50% 33.83%, #36136A 0%, #141137 74.57%, #0C092E 100%);
+}
+
+ .list-group-item{
+  background-color: transparent !important;
+  color: white;
+}
+.filled-in{
+  background: #3adb15  !important;
+  border-color: #3adb15 !important  ;
+ 
+}
+
+.filled-out{
+  background: white  !important;
+  border-color: white !important  ;
+  border: none !important;
+
+}
+.list-group-item{
+  border: none !important;
 }

@@ -22,14 +22,15 @@
     <link rel="manifest" href="./img/site.webmanifest" />
 </head>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
 <body onscroll="scrollNav()">
     <!-- Navbar -->
     <nav class="navbar fixed-top navbar-expand-xl navbar-dark p-md-0 p-2" id="navbar">
         <!-- Container wrapper -->
         <div class="container">
             <!-- Navbar brand -->
-            <a class="navbar-brand me-2" href="https://mdbgo.com/">
-                <img src="./img/logo.png" height="32" alt="" loading="lazy" style="margin-top: -1px" />
+            <a class="navbar-brand me-2" href="https://bucbuk.com">
+                <img src="./img/logo.png" height="48" alt="" loading="lazy" style="margin-top: -1px" />
                 <small>BUC</small>
             </a>
 
@@ -45,31 +46,32 @@
                 <!-- Left links -->
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About us</a>
+                        <a class="nav-link" href="#aboutus">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">White Paper</a>
+                        <a class="nav-link" href="https://bucbuk.com/files/BUC.pdf" target="_blank">White Paper</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Statistics</a>
+                        <a class="nav-link" href="#statistics">Statistics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Tokenomics</a>
+                        <a class="nav-link" href="#tokenomics">Tokenomics</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Team</a>
+                        <a class="nav-link" href="#team">Team</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">FAQ</a>
+                        <a class="nav-link" href="#faq">FAQ</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Blogs</a>
+                        <a class="nav-link" target="_blank"
+                            href="https://chitranjanbaghi.com/fantasy-sports-on-blockchain/">Blogs</a>
                     </li>
                 </ul>
                 <!-- Left links -->
 
                 <div class="d-flex align-items-center">
-                    <a href="#0" class="btn10">
+                    <a href="#0" target="_blank" class="btn10">
                         <span>Buy on Pancakeswap</span>
                         <div class="transition"></div>
                     </a>
@@ -94,14 +96,16 @@
                     actors, as the supply is increased or decreased proportionally in
                     all accounts.
                 </p>
-                <a href="#0" class="btn10">
+                <a href="#0" target="_blank" class="btn10">
                     <span>Launch Dashboard</span>
                     <div class="transition"></div>
                 </a>
 
                 <div class="hero-links">
-                    <a href="#" class="hero-link"><i class="far fa-file-alt"></i>Smart Contract</a>
-                    <a href="#" class="hero-link"><i class="far fa-play-circle"></i>How to Buy Tokens</a>
+                    <a href="https://bscscan.com/token/0x72d42A0df86CfE4618ad0450eD2b910a8E3f32d2" target="_blank"
+                        class="hero-link"><i class="far fa-file-alt"></i>Smart Contract</a>
+                    <a href="#" target="_blank" class="hero-link"><i class="far fa-play-circle"></i>How to Buy
+                        Tokens</a>
                 </div>
             </div>
         </div>
@@ -124,7 +128,7 @@
                 </div>
                 <div class="col-8 col-xl-1 data" data-aos="fade-up" id="decimalId">
                     <span> Decimal: </span><br />
-                    9
+                    18
                 </div>
             </div>
         </div>
@@ -132,7 +136,7 @@
 
 
     <div class="about-chart">
-        <div class="about ">
+        <div class="about " id="aboutus">
             <div class="about-title  justify-content-center">
                 <div class="title-para title-para-1 col-md-3 col-12">A Decentralized System with Monetary Equillibrium.
                 </div>
@@ -152,7 +156,7 @@
                 authority.
             </div>
             <div class="about-btn">
-                <a href="#0" class="btn10">
+                <a href="https://bucbuk.com/files/BUC.pdf" class="btn10">
                     <span>White paper </span>
                     <div class="transition"></div>
                 </a>
@@ -174,7 +178,7 @@
                     </svg>
                 </div>
 
-                <h1 class="sub-title">Token Distribution</h1>
+                <h1 class="sub-title" id="tokenomics">Token Distribution</h1>
 
                 <div id="donutchart" class="donutchart" style="max-width: 900px; height: 500px"></div>
                 <script type="text/javascript">
@@ -233,7 +237,7 @@
                             etc.), and provides easy integration
                         </p>
                     </div>
-                    <div class="row justify-content-center">
+                    <div class="row justify-content-center" id="statistics">
                         <div class="col-xl-2"></div>
                         <a href="#0" class="btn10" style="max-width: 400px !important">
                             <span>Buy on Pancakeswap</span>
@@ -277,10 +281,28 @@
 
                         </div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">August 2021
+                            <h4 class="timeline-title"><span class="badge">Quater 1, 2022
                                 </span></h4>
-                            <p>Achieving <span class="purple">Blockchain Agnostic</span> , that is making this monetary
-                                system available on all popular chains.</p>
+                            <ul class="list-group">
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1 filled-in" type="checkbox" style="opacity: 1;"  checked disabled />
+                                    BUC public Launch
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                    Warcry dao token public sale
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                    Warcry launch
+                                </li>
+                                <li class="list-group-item">
+                                    <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                    Listing on PCS, cg, cmc
+                                </li>
+                                
+                            </ul>
+
 
                         </div>
                     </div>
@@ -289,10 +311,27 @@
                             <i class="fas fa-donate"></i>
                         </div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">September 2021
+                            <h4 class="timeline-title"><span class="badge">Quater 2,2022
                                 </span></h4>
-                            <p>Enabling <span class="purple">liquidity farming</span> , to make sure that BUC spreads
-                                towards the masses rather than staying with big VCs or whales.</p>
+                                <ul class="list-group">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        Audit 
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        Fansportz DAO token public sale
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        Fansportz launch
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        Listing on Bsc explorer, Trust wallet
+                                    </li>
+                                    
+                                </ul>
 
                         </div>
                     </div>
@@ -301,17 +340,28 @@
                             <i class="fas fa-code"></i>
                         </div>
                         <div class="timeline-body">
-                            <h4 class="timeline-title"><span class="badge">October 2021
+                            <h4 class="timeline-title"><span class="badge">Quater 3,2022
                                 </span></h4>
-                            <p><span class="purple">Developement of Dapps</span> . Dapps would be built which would use
-                                BUC
-                                tokens and provide different facilities to the users. It can range from games to
-                                synthetic
-                                tokens to even a open virtual world.</p>
-
+                                <ul class="list-group p-0 m-0">
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me- filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        Luanching BUC and dapp dao tokens on eth and harmony
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        Making dapps compatible to eth and harmony
+                                    </li>
+                                    <li class="list-group-item">
+                                        <input class="form-check-input me-1 filled-out" type="checkbox" style="opacity: 1;"   disabled />
+                                        listing on dexes of eth and harmony
+                                    </li>
+                                   
+                                    
+                                </ul>
                         </div>
                     </div>
-                    <div class="timeline-container warning">
+                    <!--
+ <div class="timeline-container warning">
                         <div class="timeline-icon">
                             <i class="fas fa-users"></i>
                         </div>
@@ -339,6 +389,8 @@
                                 and also invest in other interesting projects over BUC.</p>
                         </div>
                     </div>
+                    -->
+                   
                     <!--
                       <div class="timeline-container info">
                         <div class="timeline-icon">
@@ -354,93 +406,84 @@
                 </div>
             </div>
         </section>
-       
+
 
     </section>
     <section class="dapp">
         <h1 class="text-center title">Our utilities</h1>
         <div class="swiper mySwiper">
             <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                  <div class="p-4">
-                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                    <h5 class="dapp-title pt-2">FANSPORTZ</h5>
-                    <div class="dapp-sub-title">Fansportz is one and only crypto based fanatasy sports game</div>
-                    <div class="dapp-btn text-center">
-                        <a href="#0" class="btn10">
-                            <span>Coming soon </span>
-        
-                        </a>
+                <div class="swiper-slide">
+                    <div class="p-4">
+                        <img src="./img/warcry.jpg" />
+                        <h5 class="dapp-title pt-2">WARCRY</h5>
+                        <div class="dapp-sub-title">Fansportz is one and only crypto based fanatasy sports game</div>
+                        <span class="badge bg-success">Gaming</span>
+                        <div class="dapp-btn text-center">
+                            <a href="#0" class="btn10">
+                                <span>Coming soon </span>
+
+                            </a>
+                        </div>
                     </div>
-                  </div>
-                
-             
-              </div>
-              <div class="swiper-slide">
-                <div class="p-4">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                  <h5 class="dapp-title pt-2">FANSPORTZ</h5>
-                  <div class="dapp-sub-title">Fansportz is one and only crypto based fanatasy sports game</div>
-                  <div class="dapp-btn text-center">
-                      <a href="#0" class="btn10">
-                          <span>Coming soon </span>
-      
-                      </a>
-                  </div>
+
+
                 </div>
-              
-           
-            </div>
-            <div class="swiper-slide">
-                <div class="p-4">
-                  <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
-                  <h5 class="dapp-title pt-2">FANSPORTZ</h5>
-                  <div class="dapp-sub-title">Fansportz is one and only crypto based fanatasy sports game</div>
-                  <div class="dapp-btn text-center">
-                      <a href="#0" class="btn10">
-                          <span>Coming soon </span>
-      
-                      </a>
-                  </div>
+                <div class="swiper-slide">
+                    <div class="p-4">
+                        <img src="./img/logo.png" />
+                        <!--
+ <h5 class="dapp-title pt-2">FANSPORTZ</h5>
+                        <div class="dapp-sub-title">Fansportz is one and only crypto based fanatasy sports game</div>
+                        -->
+                       
+                        <div class="dapp-btn text-center pt-5 mt-5">
+                            <a href="#0" class="btn10">
+                                <span>Coming soon </span>
+
+                            </a>
+                        </div>
+                    </div>
+
+
                 </div>
-              
-           
-            </div>
-              
-             
-           
+                <div class="swiper-slide">
+                    <div class="p-4">
+                        <img src="./img/logo.png" />
+                        <!--
+ <h5 class="dapp-title pt-2">FANSPORTZ</h5>
+                        <div class="dapp-sub-title">Fansportz is one and only crypto based fanatasy sports game</div>
+                        -->
+                       
+                        <div class="dapp-btn text-center pt-5 mt-5">
+                            <a href="#0" class="btn10">
+                                <span>Coming soon </span>
+
+                            </a>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+
             </div>
             <div class="swiper-pagination"></div>
-          </div>
-      
-          <!-- Swiper JS -->
-          <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-      
-          <!-- Initialize Swiper -->
-          <script>
-            var swiper = new Swiper(".mySwiper", {
-              effect: "coverflow",
-              grabCursor: true,
-              centeredSlides: true,
-              slidesPerView: "auto",
-              coverflowEffect: {
-                rotate: 10,
-                stretch: 0,
-                depth: 100,
-                modifier: 1,
-                slideShadows: true,
-              },
-              pagination: {
-                el: ".swiper-pagination",
-              },
-            });
-          </script>
+        </div>
+
+        <!-- Swiper JS -->
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+        <!-- Initialize Swiper -->
+        <script src="./js/dapp_slider.js"></script>
+
     </section>
 
 
 
     <section class="gradient">
-        <section class="faq pt-5  pb-5 mb-5">
+        <section class="faq pt-5  pb-5 mb-5" id="faq">
             <h1 class="title text-center">FAQ</h1>
             <div class="container">
                 <div class="accordion " id="accordionExample">
@@ -531,7 +574,7 @@
                 </div>
             </div>
         </section>
-        <section class="team pt-5 mt-5 pb-5">
+        <section class="team pt-5 mt-5 pb-5" id="team">
             <div class="title">
                 <svg viewBox="0 0 450 50">
                     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
@@ -554,34 +597,36 @@
                                         MODEL BUILDER
                                     </text>
                                 </svg></h4>
-                            <p class="words">“ BUC works like any other crypto.
-                                It is free from an. ”</p>
+                            <p class="words">" Trying to leave the world with better systems and tools "</p>
                             <div class="socials">
                                 <section class="mb-4">
-                                    <!-- Facebook -->
-                                    <a class="btn btn-sm btn-primary btn-floating m-1 "
-                                        style="background-color: #3b5998;" href="#!" role="button"><i
+                                    <!-- Facebook 
+                                         <a class="btn btn-sm btn-primary btn-floating m-1 "
+                                        style="background-color: #3b5998;" target="_blank" href="#" role="button"><i
                                             class="fab fa-facebook-f"></i></a>
+                                    -->
+
 
                                     <!-- Twitter -->
                                     <a class="btn btn-sm btn-primary btn-floating m-1"
-                                        style="background-color: #55acee;" href="#!" role="button"><i
+                                        style="background-color: #55acee;" target="_blank"
+                                        href="https://twitter.com/iamchitranjanb role=" button"><i
                                             class="fab fa-twitter"></i></a>
 
-                                    <!-- Google -->
-                                    <a class="btn btn-sm btn-primary btn-floating m-1"
-                                        style="background-color: #dd4b39;" href="#!" role="button"><i
-                                            class="fab fa-google"></i></a>
 
-                                    <!-- Instagram -->
+                                    <!-- Instagram 
                                     <a class="btn btn-sm btn-primary btn-floating m-1"
                                         style="background-color: #ac2bac;" href="#!" role="button"><i
                                             class="fab fa-instagram"></i></a>
+                                    -->
 
-                                    <!-- Linkedin -->
-                                    <a class="btn btn-sm btn-primary btn-floating m-1"
-                                        style="background-color: #0082ca;" href="#!" role="button"><i
+
+                                    <!-- Linkedin   -->
+                                       <a class="btn btn-sm btn-primary btn-floating m-1"
+                                        style="background-color: #0082ca;"  target="_blank" href="https://www.linkedin.com/in/chitranjanbaghi/" role="button"><i
                                             class="fab fa-linkedin-in"></i></a>
+                                  
+
 
                                 </section>
                             </div>
@@ -596,36 +641,38 @@
                             <h2 class="name"> VAMSI </h2>
                             <h4 class="pos"> <svg viewBox="0 0 450 50">
                                     <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
-                                        CODER
+                                        DEVELOPER
                                     </text>
                                 </svg></h4>
-                            <p class="words">“ BUC works like any other crypto.
-                                It is free from an. ”</p>
+                            <p class="words">“ Trying to find optimal point between order and freedom for a sustainable
+                                civilisation ”</p>
                             <div class="socials">
                                 <section class="mb-4">
-                                    <!-- Facebook -->
-                                    <a class="btn btn-sm btn-primary btn-floating m-1 "
+                                    <!-- Facebook  
+                                         <a class="btn btn-sm btn-primary btn-floating m-1 "
                                         style="background-color: #3b5998;" href="#!" role="button"><i
                                             class="fab fa-facebook-f"></i></a>
+                                    -->
+
 
                                     <!-- Twitter -->
                                     <a class="btn btn-sm btn-primary btn-floating m-1"
-                                        style="background-color: #55acee;" href="#!" role="button"><i
+                                        style="background-color: #55acee;"target="_blank" href="https://twitter.com/BeingOptimusP" role="button"><i
                                             class="fab fa-twitter"></i></a>
 
-                                    <!-- Google -->
-                                    <a class="btn btn-sm btn-primary btn-floating m-1"
-                                        style="background-color: #dd4b39;" href="#!" role="button"><i
-                                            class="fab fa-google"></i></a>
 
-                                    <!-- Instagram -->
+
+                                    <!-- Instagram 
                                     <a class="btn btn-sm btn-primary btn-floating m-1"
                                         style="background-color: #ac2bac;" href="#!" role="button"><i
                                             class="fab fa-instagram"></i></a>
+                                         -->
+
 
                                     <!-- Linkedin -->
                                     <a class="btn btn-sm btn-primary btn-floating m-1"
-                                        style="background-color: #0082ca;" href="#!" role="button"><i
+                                        style="background-color: #0082ca;" target="_blank"
+                                        href="https://www.linkedin.com/in/m-s-vamsi-63aa53205" role="button"><i
                                             class="fab fa-linkedin-in"></i></a>
 
                                 </section>
@@ -653,28 +700,39 @@
             <div class="container p-4 pb-0">
                 <!-- Section: Social media -->
                 <section class="mb-4">
-                    <!-- Facebook -->
-                    <a class="btn  btn-primary btn-floating m-1" style="background-color: #3b5998;" href="#!"
-                        role="button"><i class="fab fa-facebook-f"></i></a>
+                    <!-- Facebook 
+                     <a class="btn  btn-primary btn-floating m-1" target="_blank" style="background-color: #3b5998;"
+                        href="#!" role="button"><i class="fab fa-facebook-f"></i></a> 
+                     -->
 
                     <!-- Twitter -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #55acee;" href="#!"
-                        role="button"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #55acee;"
+                        href="https://twitter.com/FoundationBuc" role="button"><i class="fab fa-twitter"></i></a>
 
-                    <!-- Google -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #dd4b39;" href="#!"
-                        role="button"><i class="fab fa-google"></i></a>
+                    <!-- Google
+                         <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #dd4b39;"
+                        href="#!" role="button"><i class="fab fa-google"></i></a>
+                     -->
 
-                    <!-- Instagram -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #ac2bac;" href="#!"
-                        role="button"><i class="fab fa-instagram"></i></a>
 
-                    <!-- Linkedin -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #0082ca;" href="#!"
+                    <!-- Instagram 
+                     <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #ac2bac;"
+                        href="#!" role="button"><i class="fab fa-instagram"></i></a>
+                    -->
+
+
+                    <!-- Linkedin 
+                    <a class="btn btn-primary btn-floating m-1"target="_blank"  style="background-color: #0082ca;" href="#!"
                         role="button"><i class="fab fa-linkedin-in"></i></a>
-                    <!-- Github -->
-                    <a class="btn btn-primary btn-floating m-1" style="background-color: #333333;" href="#!"
-                        role="button"><i class="fab fa-github"></i></a>
+                        -->
+                    <!-- telegram -->
+                    <a class="btn btn-primary btn-floating m-1" target="_blank" style="background-color: #0082ca;"
+                        href="https://t.me/BUKcommunity" role="button"><i class="fab fa-telegram-plane"></i></a>
+                    <!-- Github
+                    
+                    
+                    -->
+
                 </section>
                 <!-- Section: Social media -->
             </div>
