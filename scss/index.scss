@@ -283,7 +283,15 @@ body {
       padding: 0px;
     }
   }
-
+  .cont{
+    padding: 0 !important;
+  }
+  .about {
+    padding-top: 100px !important;
+  }
+  .chart{
+    margin-top: 100px !important;
+  }
   .title-para-1 {
     position: relative;
     top: 0px !important;
@@ -304,6 +312,7 @@ body {
   background-position: bottom;
   background-size: 100%;
   background-repeat: no-repeat;
+  margin-top: 200px;
 }
 .chart-container {
   .title {
@@ -764,4 +773,11 @@ button:focus {
   background-color: aqua;
   border-radius: 5px; 
 
+}
+
+@media (max-width: 750px) {
+  
+  .cont{
+    padding: 0 !important;
+  }
 }
