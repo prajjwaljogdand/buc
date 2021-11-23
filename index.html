@@ -20,6 +20,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./img/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="./img/favicon-16x16.png" />
     <link rel="manifest" href="./img/site.webmanifest" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
 <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
 
@@ -49,7 +51,7 @@
                         <a class="nav-link" href="#aboutus">About us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="https://bucbuk.com/files/BUC.pdf" target="_blank">White Paper</a>
+                        <a class="nav-link" href="./files/whitepaper_buc.pdf" target="_blank">White Paper</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#statistics">Statistics</a>
@@ -82,12 +84,14 @@
         <!-- Container wrapper -->
     </nav>
     <!-- Navbar -->
-
+    <script>
+        AOS.init();
+      </script>
     <!--hero -->
     <div class="hero">
         <div class="container hero-container">
             <div class="p-0">
-                <h1 class="title">BASIC UNIVERSAL COIN</h1>
+                <h1 class="title" >BASIC UNIVERSAL COIN</h1>
                 <h3 class="sub-title">Crypto of real world utility</h3>
                 <p class="para">
                     A coin with monetary policy designed to optimise the supply of
@@ -101,32 +105,53 @@
                     <div class="transition"></div>
                 </a>
 
-                <div class="hero-links">
-                    <a href="https://bscscan.com/token/0x72d42A0df86CfE4618ad0450eD2b910a8E3f32d2" target="_blank"
+                <div class="hero-links mt-1">
+                    <a href="https://bscscan.com/token/0xe68DCa686B6b65b8B5089415248Ec5D0b91B1A97" target="_blank"
                         class="hero-link"><i class="far fa-file-alt"></i>Smart Contract</a>
-                    <a href="#" target="_blank" class="hero-link"><i class="far fa-play-circle"></i>How to Buy
+                    <a href="https://www.youtube.com/watch?v=7f9eHmJy86s" target="_blank" class="hero-link"><i class="far fa-play-circle"></i>How to Buy
                         Tokens</a>
                 </div>
+  
+                <div class="token-id mt-4">
+                    <input class="address" type="text" id="myInput" value="0xe68DCa686B6b65b8B5089415248Ec5D0b91B1A97"
+                      style="width: 79%; background : transparent; border : 0 solid white ; color : white;" readonly></input>
+                    <input id="copyButton" type="submit" value="COPY" onclick="myFunction()" href="#popup1"  
+                      class="copy btn mb-0"></input>
+                    <script>function myFunction() {
+                        /* Get the text field */
+                        var copyText = document.getElementById("myInput");
+            
+                        /* Select the text field */
+                        copyText.select();
+                        copyText.setSelectionRange(0, 99999); /* For mobile devices */
+            
+                        /* Copy the text inside the text field */
+                        document.execCommand("copy");
+                        document.getElementById("copyButton").value = "COPIED";
+            
+            
+                      }</script>
+                  </div>
             </div>
         </div>
-        <div class="container-fluid p-4 justify-content-center data-box">
+        <div class="container-fluid p-4 justify-content-center data-box" data-aos="fade-up">
             <div class="row justify-content-around">
-                <div class="col-8 col-xl-2 data" data-aos="fade-up" id="nameId">
+                <div class="col-8 col-xl-2 data"  id="nameId">
                     <span> Name : </span><br />BASIC UNIVERSAL COIN
                 </div>
-                <div class="col-8 col-xl-1 data" data-aos="fade-up" id="typeId">
+                <div class="col-8 col-xl-1 data" id="typeId">
                     <span> Type : </span><br />
                     ERC-20
                 </div>
-                <div class="col-8 col-xl-1 data" data-aos="fade-up" id="symbolId">
+                <div class="col-8 col-xl-1 data"  id="symbolId">
                     <span> Symbol : </span><br />
                     BUC
                 </div>
-                <div class="col-8 col-xl-1 data" data-aos="fade-up" id="supplyId">
+                <div class="col-8 col-xl-1 data"  id="supplyId">
                     <span> Supply : </span><br />
                     1,000,000,000
                 </div>
-                <div class="col-8 col-xl-1 data" data-aos="fade-up" id="decimalId">
+                <div class="col-8 col-xl-1 data"  id="decimalId">
                     <span> Decimal: </span><br />
                     18
                 </div>
@@ -136,14 +161,14 @@
 
 
     <div class="about-chart">
-        <div class="about " id="aboutus">
-            <div class="about-title  justify-content-center">
+        <div class="about " id="aboutus" >
+            <div class="about-title  justify-content-center"data-aos="fade-up">
                 <div class="title-para title-para-1 col-md-3 col-12">A Decentralized System with Monetary Equillibrium.
                 </div>
                 <h1 class="title col-md-5 col-12">MONEY <br>AS PRODUCT</h1>
                 <div class="title-para title-para-2 col-md-3 col-12">Wise speding is part of wise investment</div>
             </div>
-            <div class="about-para">
+            <div class="about-para"data-aos="fade-up">
                 which is specialized to do the accounting of economic goods and
                 services and make trade efficient between two parties. Since we
                 treat it as a product we believe in demand and supply of this
@@ -156,7 +181,7 @@
                 authority.
             </div>
             <div class="about-btn">
-                <a href="https://bucbuk.com/files/BUC.pdf" class="btn10">
+                <a href="./files/whitepaper_buc.pdf"  target="_blank"class="btn10">
                     <span>White paper </span>
                     <div class="transition"></div>
                 </a>
@@ -169,7 +194,7 @@
 
 
         <div class="chart" style="margin-top: 200px">
-            <div class="chart-container">
+            <div class="chart-container"data-aos="fade-up">
                 <div class="title">
                     <svg viewBox="0 0 450 50">
                         <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">
@@ -221,11 +246,12 @@
                             <span class="color-1"> </span> 50% Distribute to Community
                         </p>
                         <p class="percentage">
-                            <span class="color-2"> </span> 20% Founders and Team
-                        </p>
-                        <p class="percentage">
                             <span class="color-3"> </span> 30% Developement funds
                         </p>
+                        <p class="percentage">
+                            <span class="color-2"> </span> 20% Founders and Team
+                        </p>
+                       
                     </div>
                     <div class="chart-para col-10 col-md-6 p-4 pt-2">
                         <p>
@@ -258,16 +284,16 @@
                     <h2 class="stat-data">1000000000</h2>
                 </div>
                 <div class="col-10 col-xl-2  col-sm-4 stat">
-                    <p class="stat-title">Avarage velocity</p>
+                    <p class="stat-title">Target velocity</p>
                     <h2 class="stat-data">1</h2>
                 </div>
                 <div class="col-10 col-xl-2 col-sm-4 stat">
                     <p class="stat-title">Total token holders</p>
-                    <h2 class="stat-data">20000</h2>
+                    <h2 class="stat-data">3</h2>
                 </div>
                 <div class="col-10 col-xl-2 col-sm-4 stat">
                     <p class="stat-title">Total chains</p>
-                    <h2 class="stat-data">3</h2>
+                    <h2 class="stat-data">1</h2>
                 </div>
             </div>
         </div>
@@ -417,7 +443,7 @@
                     <div class="p-4">
                         <img src="./img/warcry.jpg" />
                         <h5 class="dapp-title pt-2">WARCRY</h5>
-                        <div class="dapp-sub-title">Fight with your crypto and make your team win</div>
+                        <p class="dapp-sub-title">select your charcter, fight with your tokens and make your team win to earn rewards</p>
                         <span class="badge bg-success">Gaming</span>
                         <div class="dapp-btn text-center">
                             <a href="#0" class="btn10">
